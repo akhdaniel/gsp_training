@@ -301,7 +301,7 @@
                             <tbody>
                                 <tr t-foreach="o.techskill_ids" t-as="l">
                                     <td>
-                                        <span t-field="l.name"/>
+                                        <span t-field="l.tech_id.name"/>
                                     </td>
                                     <td>
                                         <span t-field="l.levels"/>
