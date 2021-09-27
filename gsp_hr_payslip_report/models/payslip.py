@@ -13,6 +13,6 @@ class payslip(models.Model):
         for rec in self:
             nett = 0
             for line in rec.line_ids:
-                if line.code == 'NETT':
+                if line.code == 'NET':
                     nett = line.total
             rec.nett = nett
