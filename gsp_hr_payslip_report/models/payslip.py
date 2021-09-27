@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class payslip(models.Model):
-    _name = 'hr.payslip'
+    _inherit = 'hr.payslip'
 
     nett = fields.Float(string="Nett", compute="_get_nett")
 
