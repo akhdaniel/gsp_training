@@ -217,6 +217,50 @@
                         </table>
                     </div>
                 </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~3rd ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
+				<div class="row">
+                    <div class="col-xs-5">
+					    <h4><strong>Citizenship &#38; Other Info</strong></h4>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%"> 
+                                    <strong>Nationality</strong>
+                                </td>
+                                <td width="15%"> 
+                                    :
+                                </td>
+                                <td width="40%"> 
+                                    <t t-esc="o.country_id.name"/>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Identification No</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.identification_id" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Passport No</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.passport_id" />
+                                </td>
+                            </tr>
+                        </table>
+					</div>
+					<div class="col-xs-7">
+                </div>
+                </div>
             </div>
         </t>
     </template>
