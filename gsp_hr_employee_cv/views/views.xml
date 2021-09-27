@@ -13,12 +13,12 @@
 
     <!-- looping -->
     <template id="report_employee_document">
-            <t t-call="report.external_layout">
-                <t t-set="o" t-value="o.with_context({'lang':o.user_id.lang})" />
-                <div class="page" style="font-size:13px">
-                    <br/><br/>
+        <t t-call="report.external_layout">
+            <t t-set="o" t-value="o.with_context({'lang':o.user_id.lang})" />
+            <div class="page" style="font-size:13px">
+                <br/><br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~1st ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->				
-				<div class="row">
+                <div class="row">
                     <div class="row" style="margin-top:60px;">
                     <h2><center><strong>Employee Profile</strong></center></h2>
                         <div class="col-xs-12" style="margin-top:20px;">
@@ -40,13 +40,13 @@
                             </table>
                         </div>
                     </div>
-				<hr />
-				
+                <hr />
+                
                 </div>
-                </div>
+            </div>
             </t>
-            </t>
-        </template>
+        </t>
+    </template>
 
     <!-- template doc -->
     <template id="report_per_employee">
