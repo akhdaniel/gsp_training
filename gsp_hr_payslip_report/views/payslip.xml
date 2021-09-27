@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record model="ir.ui.view" id="gsp_hr_payslip_date_tree">
+            <field name="name">gsp_hr_payslip_date tree</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="nett" />
+                </field>
+            </field>
+        </record>
+    
+    </data>
+</odoo>
