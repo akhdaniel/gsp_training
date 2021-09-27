@@ -9,6 +9,8 @@
             <field name="arch" type="xml">
                 <field name="name" position="after">
                     <field name="basic" />
+                    <field name="hra" />
+                    <field name="ca" />
                     <field name="tunj" />
                     <field name="pot" />
                     <field name="nett" />
