@@ -168,6 +168,53 @@
                         </table>
                     </div>
                     <div class="col-xs-7 pul-left" >
+                        <h4><strong>Position</strong></h4>
+                        <table width="100%" >
+                            <tr>
+                                <td width="25%"> 
+                                    <strong>Department</strong>
+                                </td>
+                                <td width="3%"> 
+                                    :
+                                </td>
+                                <td width="65%"> 
+                                    <t t-esc="o.department_id.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Job Title</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.job_id.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Manager</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.parent_id.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Coach</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.coach_id.name" />
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
