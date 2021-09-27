@@ -37,6 +37,50 @@
                                         <t t-esc="o.name"/>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Work Email</strong>
+                                    </td>
+                                    <td > 
+                                        <strong>:</strong>
+                                    </td>
+                                    <td > 
+                                        <t t-esc="o.work_email"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Work Phone</strong>
+                                    </td>
+                                    <td > 
+                                        <strong>:</strong>
+                                    </td>
+                                    <td > 
+                                        <t t-esc="o.work_phone"/>
+                                    </td>
+                                </tr>
+                                <tr>
+										<td>
+											<strong>Date of Birth</strong>
+										</td>
+										<td > 
+											<strong>:</strong>
+										</td>
+										<td > 
+											<span t-field="o.birthday" t-field-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Active</strong>
+										</td>
+										<td > 
+											<strong>:</strong>
+										</td>
+										<td > 
+										<t t-esc="o.active" />
+										</td>
+									</tr>
                             </table>
                         </div>
                     </div>
