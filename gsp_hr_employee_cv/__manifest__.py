@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr','hr_payroll','hr_skill_qualification'],
+    'depends': ['base', 'hr','hr_payroll','hr_skill_qualification','gsp_hr_employee_date'],
 
     # always loaded
     'data': [
