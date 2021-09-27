@@ -287,9 +287,10 @@
                         </table>
                     </div>
                 </div>
+                <hr/>
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~4th ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 				<div class="row">
-                    <div class="col-xs-5">
+                    <div class="col-xs-12">
                         <h4><strong>Technical Skill</strong></h4>
                         <table width="100%">
                             <thead>
