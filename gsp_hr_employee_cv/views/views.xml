@@ -217,6 +217,7 @@
                         </table>
                     </div>
                 </div>
+                <hr/>
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~3rd ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 				<div class="row">
                     <div class="col-xs-5">
@@ -259,7 +260,32 @@
                         </table>
 					</div>
 					<div class="col-xs-7">
-                </div>
+                        <h4><strong>Status</strong></h4>
+                        <table width="100%">
+                            <tr>
+                                <td width="25%"> 
+                                    <strong>Gender</strong>
+                                </td>
+                                <td width="3%"> 
+                                :
+                                </td>
+                                <td width="72%"> 
+                                <t t-esc="o.gender" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Marital Status</strong>
+                                </td>
+                                <td> 
+                                :
+                                </td>
+                                <td> 
+                                    <t t-esc="o.marital" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </t>
