@@ -60,31 +60,115 @@
                                     </td>
                                 </tr>
                                 <tr>
-										<td>
-											<strong>Date of Birth</strong>
-										</td>
-										<td > 
-											<strong>:</strong>
-										</td>
-										<td > 
-											<span t-field="o.birthday" t-field-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}" />
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<strong>Active</strong>
-										</td>
-										<td > 
-											<strong>:</strong>
-										</td>
-										<td > 
-										<t t-esc="o.active" />
-										</td>
-									</tr>
+                                    <td>
+                                        <strong>Date of Birth</strong>
+                                    </td>
+                                    <td > 
+                                        <strong>:</strong>
+                                    </td>
+                                    <td > 
+                                        <span t-field="o.birthday" t-field-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Active</strong>
+                                    </td>
+                                    <td > 
+                                        <strong>:</strong>
+                                    </td>
+                                    <td > 
+                                    <t t-esc="o.active" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong><br/></strong>
+                                    </td>
+                                    <td > 
+                                        <strong><br/></strong>
+                                    </td>
+                                    <td > 
+                                        <strong><br/></strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong><br/></strong>
+                                    </td>
+                                    <td > 
+                                        <strong><br/></strong>
+                                    </td>
+                                    <td > 
+                                        <strong><br/></strong>
+                                    </td>
+                                </tr>
                             </table>
                         </div>
                     </div>
                 
+                </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~2nd ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<div class="row">
+                    <div class="col-xs-5">
+                        <h4><strong>Contact Information</strong></h4>
+                        <table width="100%" style="empty-cells: hide;">
+                            <tr>
+                                <td width="40%"> 
+                                    <strong>Working Address</strong>
+                                </td>
+                                <td width="10%"> 
+                                    :
+                                </td>
+                                <td width="50%"> 
+                                    <span t-if="o.address_id.street"><span t-field="o.address_id.street"/></span><br/>
+                                    <span t-if="o.address_id.city"><span t-field="o.address_id.city"/>,</span><span t-if="o.address_id.state_id"><span t-field="o.address_id.state_id.name"/>,</span><span t-field="o.address_id.zip"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <strong>Work Mobile</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <span t-if="o.mobile_phone">
+                                        <span t-field="o.mobile_phone" />
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <strong>Office Location</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <span t-if="o.work_location">
+                                        <span t-field="o.work_location" />
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <strong>Related User</strong>
+                                </td>
+                                <td> 
+                                    :
+                                </td>
+                                <td> 
+                                    <span t-if="o.user_id.name">
+                                        <span t-field="o.user_id.name" />
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="col-xs-7 pul-left" >
+                    </div>
                 </div>
             </div>
         </t>
