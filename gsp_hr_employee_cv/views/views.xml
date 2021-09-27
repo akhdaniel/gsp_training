@@ -287,6 +287,31 @@
                         </table>
                     </div>
                 </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~4th ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
+				<div class="row">
+                    <div class="col-xs-5">
+                        <h4><strong>Technical Skill</strong></h4>
+                        <table width="100%">
+                            <thead>
+                            <tr>
+                                <th>Technical Skill</th>
+                                <th>Levels</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.techskill_ids" t-as="l">
+                                    <td>
+                                        <span t-field="l.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="l.levels"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
             </div>
         </t>
     </template>
