@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+
+        <record model="ir.ui.view" id="gsp_hr_employee_date_form">
+            <field name="name">gsp_hr_employee_date form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="work_phone" position="after">
+                    <field name="tanggal_masuk" />
+                </field>
+            </field>
+        </record>
+    
+    </data>
+</odoo>
