@@ -16,6 +16,7 @@
         <t t-call="report.external_layout">
             <t t-set="o" t-value="o.with_context({'lang':o.user_id.lang})" />
             <div class="page" style="font-size:13px">
+                <h2><center><strong>Hello World</strong></center></h2>
                 <br/><br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~1st ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->				
                 <div class="row">
